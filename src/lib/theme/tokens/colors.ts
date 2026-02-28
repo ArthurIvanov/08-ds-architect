@@ -77,8 +77,10 @@ export const colors = {
 		900: "#230304",
 	},
 
-	white: "#FFFFFF",
-	whiteAlpha: "hsla(0,0%,100%,0.1)",
-	black: "#020103",
-	focus: "hsla(227,100%,88%,0.6)",
+	base: {
+		white: "#FFFFFF",
+		whiteAlpha: "hsla(0,0%,100%,0.1)",
+		black: "#020103",
+		focus: "hsla(227,100%,88%,0.6)",
+	},
 };
