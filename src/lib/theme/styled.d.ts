@@ -3,6 +3,7 @@ import "styled-components";
 declare module "styled-components" {
 	export interface DefaultTheme {
 		colors: {
+			transpatent: string;
 			bg: {
 				disabled: string;
 				neutral: {
@@ -117,17 +118,6 @@ declare module "styled-components" {
 						enabled: string;
 						hover: string;
 						active: string;
-					};
-				};
-				actionButton: {
-					ghost: { icon: string; iconDisabled: string };
-					filled: {
-						bg: string;
-						bgHover: string;
-						bgActive: string;
-						bgDisabled: string;
-						icon: string;
-						iconDisabled: string;
 					};
 				};
 			};

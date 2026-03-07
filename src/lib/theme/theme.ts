@@ -3,6 +3,7 @@ import { colors, typography, spacers, zIndices } from "./tokens";
 
 export const lightTheme: DefaultTheme = {
 	colors: {
+		transpatent: "transparent",
 		bg: {
 			disabled: colors.grey[100],
 			neutral: {
@@ -117,21 +118,6 @@ export const lightTheme: DefaultTheme = {
 					enabled: colors.grey[500],
 					hover: colors.grey[600],
 					active: colors.grey[700],
-				},
-			},
-			/** Токены action button по макету Figma (v 1.2.1, node 111500-6522) */
-			actionButton: {
-				ghost: {
-					icon: "#627083",
-					iconDisabled: "#B2B9C2",
-				},
-				filled: {
-					bg: "#F7F8F9",
-					bgHover: "#E7EAEC",
-					bgActive: "#DDE0E4",
-					bgDisabled: "#E7EAEC",
-					icon: "#1B1F25",
-					iconDisabled: "#B2B9C2",
 				},
 			},
 		},
@@ -412,6 +398,7 @@ export const lightTheme: DefaultTheme = {
 export const darkTheme: DefaultTheme = {
 	...lightTheme,
 	colors: {
+		transpatent: "transpatent",
 		bg: {
 			disabled: colors.grey[700],
 			neutral: {
@@ -528,7 +515,6 @@ export const darkTheme: DefaultTheme = {
 					active: colors.grey[100],
 				},
 			},
-			actionButton: lightTheme.colors.bg.actionButton,
 		},
 		border: {
 			disabled: colors.grey[800],

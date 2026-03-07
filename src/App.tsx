@@ -1,15 +1,23 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
 
-import { Placeholder, GlobalStyle, lightTheme } from "./lib";
+import {
+	Placeholder,
+	GlobalStyle,
+	lightTheme,
+	darkTheme,
+	Button,
+	ButtonLink,
+	Icon,
+} from "./lib";
 
 function App() {
-	const switcher = true;
+	const switcher = false;
 	return (
-		<ThemeProvider theme={lightTheme}>
+		<ThemeProvider theme={switcher ? darkTheme : lightTheme}>
 			<GlobalStyle />
 			<main>
-				<Placeholder text="Привет 8-й поток!" />
+				<ButtonLink iconAfter="user" />
 			</main>
 		</ThemeProvider>
 	);
