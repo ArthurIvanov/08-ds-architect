@@ -74,10 +74,9 @@ const StyledBadge = styled.div<IBadgeProps>`
             
             `}
 `;
+
 /**
- *
- * Используется для цветового разграничения контента
- *
+ * Информативное отображение элемента
  */
 export const Badge: React.FC<IBadgeProps> = ({
 	text = "Hello badge",

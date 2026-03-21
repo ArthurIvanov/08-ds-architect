@@ -3,11 +3,34 @@ import { iconTypes } from "../icon/icon-types";
 import { Icon } from "../icon";
 
 interface IButtonProps {
+	/**
+	 * Визуальный вес компонента
+	 */
 	appearance?: "primary" | "secondary" | "onDark" | "onLight" | "inverted";
+
+	/**
+	 * Размер компонента
+	 */
 	size?: "small" | "base";
+
+	/**
+	 * Делает кнопку недоступной для взаимодействия
+	 */
 	disabled?: boolean;
+
+	/**
+	 * Отображает иконку до текста
+	 */
 	iconBefore?: iconTypes;
+
+	/**
+	 * Отображает иконку после текста
+	 */
 	iconAfter?: iconTypes;
+
+	/**
+	 * Наполнение текстом
+	 */
 	text?: string;
 }
 
@@ -153,6 +176,9 @@ const StyledButton = styled.button<IButtonProps>`
     `}
 `;
 
+/**
+ * Основной призыв к действию
+ */
 export const Button: React.FC<IButtonProps> = ({
 	appearance = "primary",
 	size = "base",
