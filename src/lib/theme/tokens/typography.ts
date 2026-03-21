@@ -20,10 +20,10 @@ export const typography = {
 	},
 
 	lineHeight: {
-		h1: spacers[56],
-		h2: spacers[40],
-		h3: spacers[32],
-		h4: spacers[24],
+		h1: spacers[64],
+		h2: spacers[56],
+		h3: spacers[40],
+		h4: spacers[32],
 		h5: spacers[24],
 		h6: spacers[24],
 		base: spacers[24],

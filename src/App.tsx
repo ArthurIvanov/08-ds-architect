@@ -2,10 +2,11 @@ import React from "react";
 import { ThemeProvider } from "styled-components";
 
 import {
-	Placeholder,
+	Card,
 	GlobalStyle,
 	lightTheme,
 	darkTheme,
+	Badge,
 	Button,
 	ButtonLink,
 	Icon,
@@ -17,7 +18,29 @@ function App() {
 		<ThemeProvider theme={switcher ? darkTheme : lightTheme}>
 			<GlobalStyle />
 			<main>
-				<ButtonLink iconAfter="user" />
+				<Card
+					textSize="large"
+					appearance="blue"
+					badgeText="Новое"
+					newsData="Сегодня"
+				>
+					<div>
+						<Badge text="hello" />
+						<Badge text="hello" />
+						<Badge text="hello" />
+						<Badge text="hello" />
+						<Badge text="hello" />
+						<Badge text="hello" />
+					</div>
+					<div>
+						<Badge text="hello" />
+						<Badge text="hello" />
+						<Badge text="hello" />
+						<Badge text="hello" />
+						<Badge text="hello" />
+						<Badge text="hello" />
+					</div>
+				</Card>
 			</main>
 		</ThemeProvider>
 	);
