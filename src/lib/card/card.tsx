@@ -3,12 +3,39 @@ import { Badge } from "../badge";
 import { ButtonLink } from "../button";
 
 interface ICardProps {
+	/**
+	 * Визуальное разделение новости
+	 */
 	appearance?: "blue" | "green" | "pink" | "cyan" | "grey";
+
+	/**
+	 * Меняет размер шрифта
+	 */
 	textSize?: "base" | "large";
+
+	/**
+	 * Используется для ввода текста
+	 */
 	text?: string;
+
+	/**
+	 * Дата новости, может быть календарной или отметкой сегодня
+	 */
 	newsData?: string;
+
+	/**
+	 * Классификатор новости
+	 */
 	badgeText?: string;
+
+	/**
+	 * Текст кнопки
+	 */
 	buttonText?: string;
+
+	/**
+	 * Используется для сложной композиции внутри карточки
+	 */
 	children?: React.ReactNode;
 }
 
